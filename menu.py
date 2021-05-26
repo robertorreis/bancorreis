@@ -1,6 +1,8 @@
 import PySimpleGUI as sg
+import hashlib
 import abrirconta
 import acessarconta
+
 class Menu:
     def __init__(self):
 
@@ -32,8 +34,10 @@ class Menu:
         else:
             acessarconta.conta(self)
             numero = self.values['numero']
-            senha = self.values['senha']
+            titular = self.values['titular']
+            senha = sg.popup_get_text('senha', password_char='*')
             print(f'Numero da Conta:{numero}')
+            print(f'Titular:{titular}')
             print(f'Senha:{senha}')
 
 
