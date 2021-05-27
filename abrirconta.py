@@ -9,7 +9,7 @@ def conta(self):
         [sg.Text('Limite:',(15,0)), sg.Input(size=(20,0),key='limite')],
         [sg.Button('Cadastrar')]
       ]
-    janela = sg.Window("Abertura de Conta").layout(layout)
+    janela = sg.Window("Abertura de Conta - Banco dos Reis").layout(layout)
     self.button, self.values = janela.Read()
 
 

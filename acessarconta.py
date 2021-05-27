@@ -8,6 +8,6 @@ def conta(self):
         [sg.Text('Titular:',(15,0)), sg.Input(size=(40,0),key='titular')],
         [sg.Button('Acessar')]
       ]
-    janela = sg.Window("Acessar Conta").layout(layout)
+    janela = sg.Window("Acessar Conta - Banco dos Reis").layout(layout)
     self.button, self.values = janela.Read()
 
